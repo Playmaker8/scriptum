@@ -48,7 +48,7 @@ $gradient2: white;
 	a.top{
 			float: right;
 			width:44px;
-			height:39px;
+			height:38px;
 			background-image: url('../icons/arrow.png');
 			background-size: 50%;
 			background-repeat: no-repeat;
@@ -67,9 +67,9 @@ $gradient2: white;
 	.footer{
 		a.top{
 			width:100%;
-			-webkit-background-size: contain;
-			-moz-background-size: contain;
-			background-size: contain;
+			-webkit-background-size: 10%;
+			-moz-background-size: 10%;
+			background-size: 10%;
 			background-position: center center;
 			
 		}

@@ -83,13 +83,21 @@
 	}
 		h2{
 			font-family: "Baron neue", sans-serif;
-			position:absolute;
+			position:relative;
 			margin: 16% 16%;
 			color:#fff;
 			font-size: 3vw;
 			border:2px solid #fff;
 			padding:100px 0 120px;
 			letter-spacing: 3px;
+			&:before{
+				border:2px solid #fff;
+				position:absolute;
+				content: "";
+				margin:-22% -10% 0;
+				width:100%;
+				height: 100%;
+			}
 		}
 	}
 	&:after{
@@ -111,6 +119,26 @@
 		}}
 		.wood{
 			width:100%;
+			h2{
+				&:before{
+					margin:-17% 0 0;
+				}
+			}
+		}
+	}
+}
+@media (max-width:444px){
+	.quotes{
+		.slider, .wood{
+			height: auto;
+		}
+		.wood{
+			h2:before{
+				border:none;
+			}
+			.black{
+				height: 100%;
+			}
 		}
 	}
 }

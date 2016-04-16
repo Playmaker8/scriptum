@@ -62,3 +62,7 @@
         box-shadow: 0 0 10px #ddd;
         border: 1px solid #ddd;
         transition: 0.3s ease-in-out; }
+
+@media (max-width: 411px) {
+  .contact .contact__form {
+    padding: 0 5% 10%; } }

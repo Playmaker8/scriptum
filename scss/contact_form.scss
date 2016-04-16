@@ -88,3 +88,10 @@ $gradient2: white;
 	}
 	
 }
+@media (max-width:411px){
+	.contact{
+		.contact__form{
+			padding:0 5% 10%;
+		}
+	}
+}
