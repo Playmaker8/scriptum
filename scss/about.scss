@@ -1,0 +1,59 @@
+$gradient1: #f3f3f3;
+$gradient2: white;
+@mixin text-3d($hue) {
+	/* Output crazy text-shadows */
+		$ts: ();
+		@for $i from 1 through 20 {
+		$ts: $ts, $i*1px $i*1px hsl(0, 0%, 95%+$i*0.15);
+		}
+		text-shadow: $ts;
+		}
+.about{
+	margin-bottom:20px;
+	background: linear-gradient(to right, $gradient1, $gradient2);
+			float:right;
+/* 	padding:12% 22.67%; */
+	img{
+		padding:11% 1% 11% 15%;
+		display: block;
+		width:50%;
+		float:left;
+	}
+	.about__title{
+		overflow: hidden;
+		padding:11% 20% 11% 1%;
+		h2,span{
+		font-family: "Baron Neue", sans-serif;
+		color: #1a2631;
+		@include text-3d(1);
+	}
+
+	span{
+		font-weight: bold;
+		font-size: 11px	;
+		cursor: pointer;
+		&:hover{
+			text-shadow: 0 0 0;
+			transition: text-shadow 1s ease;
+		}
+	}
+	p.about__description{
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+		color: #6c6c6c;
+		
+	}
+	}
+}
+@media (max-width:768px){
+	.about{ 
+		float:none;
+		img{
+		padding:2%;
+		float:none;
+		width:100%;}
+	.about__title{
+		padding:2%;
+	}
+	}
+}

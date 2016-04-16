@@ -1,0 +1,90 @@
+$gradient1: #f3f3f3;
+$gradient2: white;
+@mixin text-3d($hue) {
+	/* Output crazy text-shadows */
+		$ts: ();
+		@for $i from 1 through 10 {
+		$ts: $ts, $i*1px $i*1px hsl($hue, 0%, 90% + $i*0.5);
+		}
+		text-shadow: $ts;
+		}
+.contact{
+	width:100%;
+	float:left;
+	background-image: -webkit-gradient(to right, $gradient1, $gradient2);
+	background-image: -webkit-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: -moz-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: -o-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: linear-gradient(to right, $gradient1, $gradient2);
+	font-family: "Baron neue", sans-serif;
+	text-align: center;
+	margin-bottom:30px;
+	h2{
+		@include text-3d(1);
+		margin:5%; 
+	}
+	.contact__form{
+		padding:0 20% 10%;
+		form {
+		input,textarea{
+			font-family: "Baron neue", sans-serif;
+			letter-spacing: 3px;
+			font-size: 10px;
+			color:#c0c0c0;
+		}
+		input{
+			background-color: #efefef;
+			border:0;
+			margin-bottom: 3%;
+			padding: 10px;
+			height: 40px;
+			&:focus{
+				outline: none;
+				box-shadow: 0 0 10px #ddd;
+				border-left:1px solid #ddd;
+				
+			}
+			&:nth-child(1){
+				width:48%;
+				float:left;
+			}
+			&:nth-child(2){
+				width:48%;
+				float:right;
+			}
+			&:nth-child(3){
+			display: block;
+			width: 100%;
+		}
+		}
+		textarea{
+			background-color: #efefef;
+			border:0;
+			resize: none;
+			width:100%;
+			padding:10px;
+			&:focus{
+				outline: none;
+				box-shadow: 0 0 10px #ddd;
+				border-left:1px solid #ddd;
+				
+			}
+		}
+		input[type^=submit]{
+			background-color: transparent;
+			display: block;
+			margin-top: 5px;
+			border:1px solid transparent;
+			border-radius:2px;
+			@include text-3d(1);
+			&:hover{
+				text-shadow:0 0 0;
+				box-shadow: 0 0 10px #ddd;
+				border:1px solid #ddd;
+				transition: 0.3s ease-in-out;
+			}
+		}
+		}
+	}
+	
+}

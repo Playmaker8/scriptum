@@ -1,0 +1,93 @@
+$gradient1: #f3f3f3;
+$gradient2: white;
+$percentPadding: 10px 5px 0 0;
+@keyframes elastic1{
+	0%{
+		width:0;
+	}
+	100%{
+		width:95%;
+	}}
+@keyframes elastic2{
+	0%{
+		width:0;
+	}
+	100%{
+		width:85%;
+	}}
+@keyframes elastic3{
+	0%{
+		width:0;
+	}
+	100%{
+		width:80%;
+	}}
+
+@mixin text-3d($hue) {
+	/* Output crazy text-shadows */
+		$ts: ();
+		@for $i from 1 through 10 {
+		$ts: $ts, $i*1px $i*1px hsl(0, 0%, 95%+$i*0.15);
+		}
+		text-shadow: $ts;
+		}
+.skills{
+	width:100%;
+	background: linear-gradient(to right, $gradient1, $gradient2);
+	font-family: "Baron Neue", sans-serif;
+	margin-top:1%;
+	padding: 3% 15% 2%;
+	h2{
+		text-align: center;
+		@include text-3d(1);
+	}
+	p{
+		@include text-3d(1);
+		font-size: 12px;
+	}
+	.progress{
+		width:100%;
+		height: auto;
+		background-color:$gradient1;
+		margin-bottom: 40px;
+		font-size: 12px;
+		#liquid1{
+			background-color: black;
+			width:95%;
+			text-align: right;
+			padding: $percentPadding;
+			height: 30px;
+			color:white;
+		}
+		#liquid2{
+			width:85%;
+			background-color: black;
+			text-align: right;
+			padding: $percentPadding;
+			height: 30px;
+			color:white;
+		}
+		#liquid3{
+			width:80%;
+			background-color: black;
+			text-align: right;
+			padding: $percentPadding;
+			height: 30px;
+			color:white;
+		}
+		}
+}
+@media (max-width:1038px){
+	.skills p{
+		text-shadow: 0 0 0;
+	}
+}
+@media (max-width:768px){
+	.skills{
+		.progress{
+			#liquid1, #liquid2, #liquid3{
+				height: 34px;
+			}
+		}
+	}
+}

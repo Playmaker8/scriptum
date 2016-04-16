@@ -1,0 +1,57 @@
+.footer {
+  clear: both;
+  height: 137px;
+  background-image: -webkit-gradient(to right, #f3f3f3, white);
+  background-image: -webkit-linear-gradient(to right, #f3f3f3, white);
+  background-image: -moz-linear-gradient(to right, #f3f3f3, white);
+  background-image: -o-linear-gradient(to right, #f3f3f3, white);
+  background-image: linear-gradient(to right, #f3f3f3, white);
+  padding: 3% 15%; }
+  .footer .share {
+    float: left; }
+    .footer .share p {
+      font-family: "Arial", sans-serif;
+      color: #5c5c5c;
+      font-size: 12px;
+      font-weight: bold;
+      padding-top: 13px;
+      clear: both; }
+    .footer .share span a {
+      float: left;
+      height: 15px;
+      padding-right: 20px;
+      width: 15px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      .footer .share span a:hover {
+        transform: scale(1.2, 1.2);
+        opacity: 0.4;
+        transition: 0.3s ease; }
+    .footer .share .share__twitter a {
+      background-image: url("../icons/twitter.svg"); }
+    .footer .share .share__facebook a {
+      background-image: url("../icons/facebook.svg"); }
+    .footer .share .share__behance a {
+      background-image: url("../icons/behance.svg"); }
+  .footer a.top {
+    float: right;
+    width: 44px;
+    height: 39px;
+    background-image: url("../icons/arrow.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center 11px;
+    background-color: #000; }
+    .footer a.top:visited {
+      color: white; }
+    .footer a.top:hover {
+      opacity: 0.6;
+      transition: 0.3s ease; }
+
+@media (max-width: 402px) {
+  .footer a.top {
+    width: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    background-position: center center; } }

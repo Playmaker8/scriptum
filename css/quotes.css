@@ -1,0 +1,91 @@
+.quotes {
+  width: 100%;
+  text-align: center;
+  float: left;
+  height: 600px;
+  margin-bottom: 30px; }
+  .quotes .slider {
+    float: left;
+    width: 50%;
+    height: inherit;
+    background-image: url("../img/bg_quote.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: default; }
+    .quotes .slider .radio-group {
+      margin-top: 36%; }
+      .quotes .slider .radio-group input {
+        opacity: 0;
+        margin-left: 10px;
+        cursor: pointer; }
+      .quotes .slider .radio-group .slider-quote {
+        position: relative;
+        margin: auto;
+        width: 55%;
+        height: 108px;
+        font-weight: bold; }
+        .quotes .slider .radio-group .slider-quote .quote1, .quotes .slider .radio-group .slider-quote .quote2, .quotes .slider .radio-group .slider-quote .quote3, .quotes .slider .radio-group .slider-quote .quote4 {
+          margin: auto;
+          font-family: "Arial", sans-serif;
+          position: absolute;
+          z-index: 0;
+          opacity: 0; }
+      .quotes .slider .radio-group .controls {
+        padding-top: 20px; }
+        .quotes .slider .radio-group .controls label {
+          display: inline-block;
+          width: 5px;
+          cursor: pointer;
+          height: 5px;
+          margin-left: 13px;
+          background-color: #ddd; }
+      .quotes .slider .radio-group #slide1:checked ~ .controls label:nth-child(1),
+      .quotes .slider .radio-group #slide2:checked ~ .controls label:nth-child(2),
+      .quotes .slider .radio-group #slide3:checked ~ .controls label:nth-child(3),
+      .quotes .slider .radio-group #slide4:checked ~ .controls label:nth-child(4) {
+        background-color: #000; }
+      .quotes .slider .radio-group #slide1:checked ~ .slider-quote .quote1,
+      .quotes .slider .radio-group #slide2:checked ~ .slider-quote .quote2,
+      .quotes .slider .radio-group #slide3:checked ~ .slider-quote .quote3,
+      .quotes .slider .radio-group #slide4:checked ~ .slider-quote .quote4 {
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 1s ease; }
+  .quotes .wood {
+    width: 50%;
+    float: left;
+    background-image: url("../img/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    position: relative; }
+    .quotes .wood .black {
+      position: absolute;
+      width: 100%;
+      height: inherit;
+      background-color: #000011;
+      opacity: 0.5; }
+    .quotes .wood h2 {
+      font-family: "Baron neue", sans-serif;
+      position: absolute;
+      margin: 16% 16%;
+      color: #fff;
+      font-size: 3vw;
+      border: 2px solid #fff;
+      padding: 100px 0 120px;
+      letter-spacing: 3px; }
+  .quotes:after {
+    content: "";
+    clear: both;
+    visibility: hidden; }
+
+@media (max-width: 768px) {
+  .quotes {
+    float: none; }
+    .quotes .slider {
+      width: 100%; }
+      .quotes .slider .radio-group .slider-quote {
+        width: auto; }
+    .quotes .wood {
+      width: 100%; } }

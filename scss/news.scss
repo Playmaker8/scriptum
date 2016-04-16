@@ -1,0 +1,75 @@
+$gradient1: #f3f3f3;
+$gradient2: white;
+@mixin text-3d($hue) {
+	/* Output crazy text-shadows */
+		$ts: ();
+		@for $i from 1 through 15 {
+		$ts: $ts, $i*1px $i*1px hsl($hue + $i*1, 0%, 81% + $i);
+		}
+		text-shadow: $ts;
+		}
+.news{
+	font-family: "Baron neue", sans-serif;
+	text-align:center;
+	float:left;
+	width:100%;
+	background-image: -webkit-gradient(to right, $gradient1, $gradient2);
+	background-image: -webkit-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: -moz-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: -o-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: linear-gradient(to right, $gradient1, $gradient2);
+	padding-bottom:100px;
+	margin-bottom:30px;
+	cursor: default;
+	&:after{
+		clear: both;
+		content: "";
+		visibility: hidden;
+	}
+	h2{
+		text-align:center;
+		padding:5% 0 3% 0;
+		margin:0;
+		@include text-3d(1000);
+	}
+	.news__thumbnails{
+		display: inline-block;
+		max-width:300px;
+		margin-right: 8px;
+		img[src^="img"]{
+		width:100%;
+		}
+	}
+	.thumb-description{
+		text-align: left;
+		font-family: "Arial", sans-serif;
+		font-size: 13px;
+		color:#979797;
+		b{
+			font-family: "Baron neue", sans-serif;
+			display: block;
+			color:#000;
+			padding:5px 0 5px;
+		}
+		span{
+			font-weight: normal;
+			font-size: 13px;
+			display: inline-block;
+			font-family: "Baron neue", sans-serif;
+			margin-top: 20px;
+			cursor: pointer;
+			&:hover{
+				text-shadow: 0 0 0;
+				transition: text-shadow 1s ease;
+			}
+			@include text-3d(1000);
+			}
+			time{
+				padding-left:15px;
+			}
+			i{
+				padding-right: 5px;
+			}
+		
+	}
+}

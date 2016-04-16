@@ -1,0 +1,77 @@
+$gradient1: #f3f3f3;
+$gradient2: white;
+.footer{
+	clear:both;
+	height:137px;
+	background-image: -webkit-gradient(to right, $gradient1, $gradient2);
+	background-image: -webkit-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: -moz-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: -o-linear-gradient(to right, $gradient1, $gradient2);
+	background-image: linear-gradient(to right, $gradient1, $gradient2);
+	padding:3% 15%;
+	.share{
+		float:left;
+		
+		p{
+		font-family: "Arial", sans-serif;
+		color:#5c5c5c;
+		font-size: 12px;
+		font-weight: bold;
+		padding-top:13px;
+		clear: both;
+		}
+		span a{
+			float: left;
+			height: 15px;
+			padding-right: 20px;
+			width:15px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			&:hover{
+				transform: scale(1.2,1.2);
+				opacity: 0.4;
+				transition: 0.3s ease;
+			}
+
+		}
+		.share__twitter a{
+			background-image: url('../icons/twitter.svg');
+
+		}
+		.share__facebook a{
+			background-image: url('../icons/facebook.svg');
+		}
+		.share__behance a{
+			background-image: url('../icons/behance.svg');
+		}
+	}
+	a.top{
+			float: right;
+			width:44px;
+			height:39px;
+			background-image: url('../icons/arrow.png');
+			background-size: 50%;
+			background-repeat: no-repeat;
+			background-position: center 11px;
+			background-color: #000;
+			&:visited{
+				color:white;
+			}
+			&:hover{
+				opacity: 0.6;
+				transition: 0.3s ease;
+			}
+		}
+}
+@media (max-width:402px){
+	.footer{
+		a.top{
+			width:100%;
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			background-size: contain;
+			background-position: center center;
+			
+		}
+	}
+}

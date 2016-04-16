@@ -1,0 +1,68 @@
+.iphone {
+  background-image: url("../img/iPhone.png");
+  background-repeat: no-repeat;
+  background-size: 21%;
+  background-position: center 4em;
+  min-height: 300px;
+  height: 600px;
+  max-height: 834px;
+  font-family: "Arial", sans-serif;
+  padding: 10% 13%;
+  color: #6c6c6c; }
+  .iphone b {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #1a2631; }
+  .iphone div {
+    width: 275px; }
+    .iphone div:after {
+      content: "";
+      clear: both;
+      overflow: hidden; }
+  .iphone i {
+    border: 1px solid #000;
+    float: left;
+    text-align: center;
+    width: 61px;
+    height: 61px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    padding: 10px 0 0 0; }
+  .iphone .iphone__beauty {
+    float: left;
+    padding-bottom: 10px; }
+  .iphone .iphone__retina {
+    float: right;
+    text-align: right;
+    padding-bottom: 10px; }
+    .iphone .iphone__retina i {
+      float: right;
+      margin-left: 10px; }
+  .iphone .iphone__responsive {
+    float: left;
+    clear: left;
+    padding-bottom: 10px; }
+  .iphone .iphone__coffee {
+    float: right;
+    text-align: right;
+    clear: right;
+    padding-bottom: 10px; }
+    .iphone .iphone__coffee i {
+      float: right;
+      margin-left: 10px; }
+  .iphone p {
+    margin: 0;
+    font-size: 14px; }
+
+@media (max-width: 1160px) {
+  .iphone {
+    background-size: 15%;
+    background-position: center 23em; } }
+@media (max-width: 786px) {
+  .iphone {
+    background-image: none; } }
+@media (max-width: 320px) {
+  .iphone {
+    padding: 0;
+    float: left;
+    height: auto; } }

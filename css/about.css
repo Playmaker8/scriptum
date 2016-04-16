@@ -1,0 +1,39 @@
+.about {
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #f3f3f3, white);
+  float: right;
+  /* 	padding:12% 22.67%; */ }
+  .about img {
+    padding: 11% 1% 11% 15%;
+    display: block;
+    width: 50%;
+    float: left; }
+  .about .about__title {
+    overflow: hidden;
+    padding: 11% 20% 11% 1%; }
+    .about .about__title h2, .about .about__title span {
+      font-family: "Baron Neue", sans-serif;
+      color: #1a2631;
+      /* Output crazy text-shadows */
+      text-shadow: 1px 1px #f3f3f3, 2px 2px #f3f3f3, 3px 3px #f3f3f3, 4px 4px #f4f4f4, 5px 5px #f4f4f4, 6px 6px whitesmoke, 7px 7px whitesmoke, 8px 8px whitesmoke, 9px 9px #f6f6f6, 10px 10px #f6f6f6, 11px 11px #f6f6f6, 12px 12px #f7f7f7, 13px 13px #f7f7f7, 14px 14px #f8f8f8, 15px 15px #f8f8f8, 16px 16px #f8f8f8, 17px 17px #f9f9f9, 18px 18px #f9f9f9, 19px 19px #fafafa, 20px 20px #fafafa; }
+    .about .about__title span {
+      font-weight: bold;
+      font-size: 11px;
+      cursor: pointer; }
+      .about .about__title span:hover {
+        text-shadow: 0 0 0;
+        transition: text-shadow 1s ease; }
+    .about .about__title p.about__description {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #6c6c6c; }
+
+@media (max-width: 768px) {
+  .about {
+    float: none; }
+    .about img {
+      padding: 2%;
+      float: none;
+      width: 100%; }
+    .about .about__title {
+      padding: 2%; } }

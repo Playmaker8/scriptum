@@ -1,0 +1,55 @@
+$gradient1: #f3f3f3;
+$gradient2: white;
+.works{
+	clear:both;
+	text-align:center;
+	padding:5% 10%;
+	background: linear-gradient(to right, $gradient1, $gradient2);
+	margin-bottom:2%;
+	h2{
+		font-family: "Baron Neue", sans-serif;
+		@mixin text-3d($hue) {
+	/* Output crazy text-shadows */
+		$ts: ();
+		@for $i from 1 through 20 {
+		$ts: $ts, $i*1px $i*1px hsl(0, 0%, 95%+$i*0.15);
+		}
+		text-shadow: $ts;
+		}
+		@include text-3d(1);
+	}
+	
+	.works__grid{
+		column-count: 3;
+		-webkit-column-count: 3;
+		-moz-column-count:3;
+		-o-column-count:3;
+		overflow: hidden;
+		.grid-item{
+			float:left;
+		}
+		img{
+			width:100%;
+
+			margin-bottom:5px;
+		}
+		}
+		ul{
+			padding:0;
+			a{
+				text-decoration:none;
+				&:visited{
+				color:#1a2631;
+			}
+			}
+			.is_active{
+			text-decoration: underline;
+	}
+		}
+	li{
+	display:inline;
+	padding: 1%;
+	font-size: 12px;
+	font-family: "Baron Neue", sans-serif;
+	}
+}

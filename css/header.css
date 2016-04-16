@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 1.8%;
+  /* (35/1920)*100% */
+  background: #f3f3f3; }
+
+.container {
+  max-width: 1920px;
+  max-height: 8531px;
+  margin: 0 auto; }
+
+.header {
+  max-width: 1920px;
+  height: auto;
+  padding: 19px;
+  background-image: url("../img/hd_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1%;
+  /* 	w3cschool icon
+   */ }
+  .header .header__title {
+    padding: 16% 4% 0 0;
+    font-family: "Silent Lips", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0 auto;
+    /* Output crazy text-shadows */
+    text-shadow: 1px 1px #b5b5b5, 2px 2px #b8b8b8, 3px 3px #bababa, 4px 4px #bdbdbd, 5px 5px #bfbfbf, 6px 6px #c2c2c2, 7px 7px #c4c4c4, 8px 8px #c7c7c7, 9px 9px #c9c9c9, 10px 10px #cccccc, 11px 11px #cfcfcf, 12px 12px #d1d1d1, 13px 13px #d4d4d4, 14px 14px #d6d6d6, 15px 15px #d9d9d9, 16px 16px #dbdbdb, 17px 17px #dedede, 18px 18px #e0e0e0, 19px 19px #e3e3e3, 20px 20px #e6e6e6, 21px 21px #e8e8e8, 22px 22px #ebebeb, 23px 23px #ededed, 24px 24px #f0f0f0, 25px 25px #f2f2f2, 26px 26px whitesmoke, 27px 27px #f7f7f7, 28px 28px #fafafa, 29px 29px #fcfcfc, 30px 30px white, 31px 31px white, 32px 32px white, 33px 33px white, 34px 34px white, 35px 35px white, 36px 36px white, 37px 37px white, 38px 38px white, 39px 39px white, 40px 40px white, 41px 41px white, 42px 42px white, 43px 43px white, 44px 44px white, 45px 45px white, 46px 46px white, 47px 47px white, 48px 48px white, 49px 49px white, 50px 50px white, 51px 51px white, 52px 52px white, 53px 53px white, 54px 54px white, 55px 55px white, 56px 56px white, 57px 57px white, 58px 58px white, 59px 59px white, 60px 60px white, 61px 61px white, 62px 62px white, 63px 63px white, 64px 64px white, 65px 65px white, 66px 66px white, 67px 67px white, 68px 68px white, 69px 69px white, 70px 70px white, 71px 71px white, 72px 72px white, 73px 73px white, 74px 74px white, 75px 75px white, 76px 76px white, 77px 77px white, 78px 78px white, 79px 79px white, 80px 80px white, 81px 81px white, 82px 82px white, 83px 83px white, 84px 84px white, 85px 85px white, 86px 86px white, 87px 87px white, 88px 88px white, 89px 89px white, 90px 90px white, 91px 91px white, 92px 92px white, 93px 93px white, 94px 94px white, 95px 95px white, 96px 96px white, 97px 97px white, 98px 98px white, 99px 99px white, 100px 100px white, 101px 101px white, 102px 102px white, 103px 103px white, 104px 104px white, 105px 105px white; }
+    .header .header__title h1 {
+      margin: 0;
+      margin-top: 5%;
+      margin-right: 1%; }
+    .header .header__title p {
+      margin: auto; }
+  .header img[src^="img/mount"] {
+    width: 46%;
+    margin-top: -2%;
+    margin-left: 23.7%;
+    display: block;
+    position: absolute; }
+  .header .header__logo {
+    font-family: "Silent Lips", sans-serif;
+    font-size: 55px;
+    float: left;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 77px;
+    height: 111px;
+    transition: 1s;
+    cursor: default; }
+    .header .header__logo:hover {
+      transform: rotateY(360deg); }
+    .header .header__logo:before {
+      width: 74px;
+      height: 107px;
+      position: absolute;
+      content: "";
+      border: 2px solid #fff;
+      margin: 3px; }
+    .header .header__logo span {
+      padding: 36px 29px;
+      position: absolute;
+      transition: 1s; }
+  .header .hack {
+    padding-top: 27%;
+    margin: 0;
+    /* 450px/800px = 0.5625 */ }
+  .header .header__menu {
+    background: linear-gradient(135deg, #e4e4e4, #fefefe);
+    /* box-shadow: (5px 5px #fff); */
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    text-align: center;
+    width: 76px;
+    height: 112px;
+    float: right; }
+    .header .header__menu:after {
+      width: 76px;
+      background: linear-gradient(135deg, #e4e4e4, #fefefe);
+      height: 112px;
+      position: absolute;
+      z-index: -1;
+      content: "";
+      margin: 4px -49px; }
+  .header .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 35px; }
+  .header .bar1, .header .bar2, .header .bar3 {
+    width: 33px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+  .header .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px); }
+  .header .change .bar2 {
+    opacity: 0; }
+  .header .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+@media (max-width: 460px) {
+  .header__menu, .header__logo {
+    display: none; } }
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0; }
+    body .header .header__title img {
+      margin-top: -1.3%;
+      margin-left: 24.6%; } }
+@media (max-width: 1285px) {
+  .header .header__title {
+    /* Output crazy text-shadows */
+    text-shadow: 1px 1px #b5b5b5, 2px 2px #b8b8b8, 3px 3px #bababa, 4px 4px #bdbdbd, 5px 5px #bfbfbf, 6px 6px #c2c2c2, 7px 7px #c4c4c4, 8px 8px #c7c7c7, 9px 9px #c9c9c9, 10px 10px #cccccc, 11px 11px #cfcfcf, 12px 12px #d1d1d1, 13px 13px #d4d4d4, 14px 14px #d6d6d6, 15px 15px #d9d9d9, 16px 16px #dbdbdb, 17px 17px #dedede, 18px 18px #e0e0e0, 19px 19px #e3e3e3, 20px 20px #e6e6e6, 21px 21px #e8e8e8, 22px 22px #ebebeb, 23px 23px #ededed, 24px 24px #f0f0f0, 25px 25px #f2f2f2, 26px 26px whitesmoke, 27px 27px #f7f7f7, 28px 28px #fafafa, 29px 29px #fcfcfc, 30px 30px white, 31px 31px white, 32px 32px white, 33px 33px white, 34px 34px white, 35px 35px white, 36px 36px white, 37px 37px white, 38px 38px white, 39px 39px white, 40px 40px white, 41px 41px white, 42px 42px white, 43px 43px white, 44px 44px white, 45px 45px white, 46px 46px white, 47px 47px white, 48px 48px white, 49px 49px white, 50px 50px white, 51px 51px white, 52px 52px white, 53px 53px white, 54px 54px white, 55px 55px white, 56px 56px white, 57px 57px white, 58px 58px white, 59px 59px white, 60px 60px white, 61px 61px white, 62px 62px white, 63px 63px white, 64px 64px white, 65px 65px white, 66px 66px white, 67px 67px white, 68px 68px white, 69px 69px white, 70px 70px white, 71px 71px white, 72px 72px white, 73px 73px white, 74px 74px white, 75px 75px white, 76px 76px white, 77px 77px white, 78px 78px white, 79px 79px white, 80px 80px white, 81px 81px white, 82px 82px white, 83px 83px white, 84px 84px white, 85px 85px white, 86px 86px white, 87px 87px white, 88px 88px white, 89px 89px white, 90px 90px white; } }
+@media (max-width: 915px) {
+  .header .header__title {
+    /* Output crazy text-shadows */
+    text-shadow: 1px 1px #b5b5b5, 2px 2px #b8b8b8, 3px 3px #bababa, 4px 4px #bdbdbd, 5px 5px #bfbfbf, 6px 6px #c2c2c2, 7px 7px #c4c4c4, 8px 8px #c7c7c7, 9px 9px #c9c9c9, 10px 10px #cccccc, 11px 11px #cfcfcf, 12px 12px #d1d1d1, 13px 13px #d4d4d4, 14px 14px #d6d6d6, 15px 15px #d9d9d9, 16px 16px #dbdbdb, 17px 17px #dedede, 18px 18px #e0e0e0, 19px 19px #e3e3e3, 20px 20px #e6e6e6, 21px 21px #e8e8e8, 22px 22px #ebebeb, 23px 23px #ededed, 24px 24px #f0f0f0, 25px 25px #f2f2f2, 26px 26px whitesmoke, 27px 27px #f7f7f7, 28px 28px #fafafa, 29px 29px #fcfcfc, 30px 30px white, 31px 31px white, 32px 32px white, 33px 33px white, 34px 34px white, 35px 35px white, 36px 36px white, 37px 37px white, 38px 38px white, 39px 39px white, 40px 40px white, 41px 41px white, 42px 42px white, 43px 43px white, 44px 44px white, 45px 45px white, 46px 46px white, 47px 47px white, 48px 48px white, 49px 49px white, 50px 50px white, 51px 51px white, 52px 52px white, 53px 53px white, 54px 54px white, 55px 55px white, 56px 56px white, 57px 57px white, 58px 58px white, 59px 59px white, 60px 60px white, 61px 61px white, 62px 62px white, 63px 63px white, 64px 64px white, 65px 65px white; } }
+@media (max-width: 586px) {
+  .header .header__title {
+    /* Output crazy text-shadows */
+    text-shadow: 1px 1px #b5b5b5, 2px 2px #b8b8b8, 3px 3px #bababa, 4px 4px #bdbdbd, 5px 5px #bfbfbf, 6px 6px #c2c2c2, 7px 7px #c4c4c4, 8px 8px #c7c7c7, 9px 9px #c9c9c9, 10px 10px #cccccc, 11px 11px #cfcfcf, 12px 12px #d1d1d1, 13px 13px #d4d4d4, 14px 14px #d6d6d6, 15px 15px #d9d9d9, 16px 16px #dbdbdb, 17px 17px #dedede, 18px 18px #e0e0e0, 19px 19px #e3e3e3, 20px 20px #e6e6e6, 21px 21px #e8e8e8, 22px 22px #ebebeb, 23px 23px #ededed, 24px 24px #f0f0f0, 25px 25px #f2f2f2, 26px 26px whitesmoke, 27px 27px #f7f7f7, 28px 28px #fafafa, 29px 29px #fcfcfc, 30px 30px white, 31px 31px white, 32px 32px white, 33px 33px white, 34px 34px white, 35px 35px white; } }
