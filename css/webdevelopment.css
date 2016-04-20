@@ -14,13 +14,20 @@
     width: 50%;
     height: 100%;
     text-align: center;
-    padding-top: 11%; }
+    position: relative; }
+    .web-development .web-development__bg .black {
+      position: absolute;
+      width: 100%;
+      height: inherit;
+      background-color: #000027;
+      opacity: 0.3; }
     .web-development .web-development__bg h2 {
       font-size: 4vw;
       display: inline-block;
       padding: 1.7%;
       border: 2px solid white;
       position: relative;
+      margin-top: 24%;
       color: white; }
       .web-development .web-development__bg h2:before {
         width: 40.6vw;

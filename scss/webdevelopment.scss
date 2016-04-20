@@ -8,6 +8,7 @@ $textcolr: white;
 		content: "";
 		overflow: hidden;
 	}
+
 	.web-development__bg{
 	background-image: url('../img/webdev.jpg');
 	background-repeat: no-repeat;
@@ -16,13 +17,21 @@ $textcolr: white;
 	width:50%;
 	height:100%;
 	text-align: center;
-	padding-top: 11%;
+	position:relative;
+	.black{
+		position:absolute;
+		width:100%;
+		height: inherit;
+		background-color: #000027;
+		opacity: 0.3;
+	}
 	h2{
 		font-size: 4vw;
 		display: inline-block;
 		padding: 1.7%;
 		border:2px solid $textcolr;
 		position:relative;
+		margin-top: 24%;
 		color: $textcolr;
 		&:before{
 			width: 40.6vw;

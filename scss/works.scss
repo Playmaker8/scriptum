@@ -3,7 +3,7 @@ $gradient2: white;
 .works{
 	clear:both;
 	text-align:center;
-	padding:5% 10%;
+	padding:5% 15%;
 	background: linear-gradient(to right, $gradient1, $gradient2);
 	margin-bottom:2%;
 	h2{
@@ -26,12 +26,44 @@ $gradient2: white;
 		-o-column-count:3;
 		overflow: hidden;
 		.grid-item{
-			float:left;
+			max-width:407px;
 		}
+		.grid-item_normal{
+			height: 210px;
+			img{
+				height: 100%;
+				float: left;
+			}
+		}
+		.grid-item_small{
+			height: 196px;
+			img{
+				height: 100%;
+				float: left;
+			}
+		}
+		.grid-item_average{
+			img{
+				height: 230px;
+			}
+		}
+		.grid-item_large-x{
+			height: 285px;
+			img{
+				height: 100%;
+				float: left;
+			}
+		}
+		.grid-item_large-xx {
+		height: 400px;
+			img{
+			height:100%;
+		}
+	}
 		img{
 			width:100%;
-
-			margin-bottom:5px;
+			
+			margin-bottom:10px;
 		}
 		}
 		ul{
